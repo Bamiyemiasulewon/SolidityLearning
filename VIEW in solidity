@@ -1,0 +1,23 @@
+ // SPDX-License-Identifier: MIT
+
+ pragma solidity ^0.8.18;
+
+contract View {
+   uint256 public   Num1 = 5;
+   uint256  public Num2 = 7;
+
+
+    //Use VIEW to check the state variable
+    // You cannot modify the state variable once you use the VIEW keyword.
+   function getResults() public view returns(uint256 product, uint256 sum)
+    {
+        product = Num1 * Num2;
+        sum = Num1 + Num2;
+
+       
+
+   }
+
+
+}
+
