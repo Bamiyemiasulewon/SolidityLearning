@@ -1,0 +1,25 @@
+ // SPDX-License-Identifier: MIT
+
+ pragma solidity ^0.8.18;
+
+contract Pure {
+        uint256 num1 = 20;
+        uint256 num2 = 30;
+    //Use PURE keyword to access only local variables.
+
+    function getData() public pure returns(uint256, uint256) {
+      uint256  Num1 = 10;
+       uint256 Num2 = 15;
+
+       uint256 product = Num1 * Num2;
+      uint256  sum = Num1 + Num2;
+
+    return (product, sum);
+
+    //Will bring out an error if you try to access the state varable.
+
+
+    }
+
+
+}
