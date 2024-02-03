@@ -1,0 +1,16 @@
+ // SPDX-License-Identifier: MIT
+
+ pragma solidity ^0.8.18;
+
+//SOLIDITY ERROR HANDLING
+// -----require statement
+contract Require {
+    function check (uint256 input)public pure returns(string memory) {
+        require (input >= 0, "invalid uint8");
+        require (input <= 255, "invalid uint");
+
+        return  "input is uint8";
+    }   
+
+}
+
