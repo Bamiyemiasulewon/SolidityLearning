@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.18;
+
+// Array - dynamic or fixed size
+
+contract Array {
+    uint256[]public nums = [1, 2, 3];  //dynamic
+    uint256[3] public numFix = [4, 5, 6];  //fixed size
+
+    function examples() external   {
+        nums.push(4); // [1, 2, 3, 4]  
+        uint x = nums[1];   //get
+        nums[2] = 555; // [1, 2, 555, 4]  //update
+        delete nums[1];  // [1, 0, 555,4] //delete
+        nums.pop(); // [1, 0, 555] // will  delete the last number
+        uint len = nums.length;  // length of an array
+
+    }
+
+}
