@@ -1,0 +1,30 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.18;
+
+contract Structs{
+    struct Car {
+      string  model;
+       uint year;
+       address owner;
+    }
+    Car public car ;
+    Car[] public cars;
+    mapping (address => Car[]) public carsByOwner;
+
+    function examples() external {
+        Car memory toyota = Car("Toyota", 1990, msg.sender);
+        Car memory tesla;
+        tesla.model = "Tesla";
+        tesla.year = 2010;
+        tesla.owner = msg.sender;
+
+        cars.push(toyota);
+        cars.push(tesla);
+
+        Car storage car = cars[0];
+        car.year = 1999;
+
+    }
+
+}
