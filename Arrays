@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.18;
 
-// Array - dynamic or fixed size
+// Array - dynamic size or fixed size
 
 contract Array {
     uint256[]public nums = [1, 2, 3];  //dynamic
