@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.18;
+
+contract Visibility{
+
+//private - only inside contract
+// internal - only inside contract and chld contracts
+// public - inside and outside contract
+ //external - only from outside contract
+}
