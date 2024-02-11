@@ -5,7 +5,7 @@
 contract Pure {
         uint256 num1 = 20;
         uint256 num2 = 30;
-    //Use PURE keyword to access only local variables.
+    //Use PURE keyword to access only local variables
 
     function getData() public pure returns(uint256, uint256) {
       uint256  Num1 = 10;
