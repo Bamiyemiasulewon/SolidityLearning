@@ -2,7 +2,7 @@
  pragma solidity ^0.8.18;
 
 // PAYABLE
-// Payable: means that a contract can receive Ether
+// Payable: means that a contract can receive Ether.
 
 contract Payable {
 
