@@ -5,7 +5,7 @@ pragma solidity ^0.8.18;
 // IMPORTANT NOTES:
 // In Solidity, a constructor is a special function that is executed only once, at the time a contract is deployed to the Ethereum blockchain
 //  Constructors are primarily used to initialize the state variables of a contract. 
-// it is executed only once.
+// it is executed only once
 
 
 contract Constructor {
