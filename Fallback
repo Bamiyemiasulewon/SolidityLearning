@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract Fallback {
+    event Log(string func,address sender ,uint value , bytes data);
+
+    // the fallback function is executed when you try to call a function that does not exist
+    fallback() external payable { 
+        emit Log("fallback", msg.sender, msg.value, msg.data);
+    }
+
+    // use "receive" only if msg.data is empty
+    receive() external payable {
+        emit Log("receive", msg.sender, msg.value, "");
+     }
+
+     //If the receive function is empty, even though msg.data is empty the "fallback" function will be executed.
+}
